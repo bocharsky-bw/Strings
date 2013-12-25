@@ -1,0 +1,4 @@
+Strings
+=======
+
+String class

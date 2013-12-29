@@ -4,7 +4,7 @@ require_once __DIR__ .'/../String.php';
 use BW\Strings\String;
 
 function newln() {
-    return "<br>\n";
+    return "<br>". PHP_EOL;
 }
 
 /* Sting initialization */
@@ -26,3 +26,7 @@ print 'First $str string after copy operation is still: $str = '. $str . newln()
 $str = $str->trim();
 print 'Trimmed string at both sides: $str = '. $str . newln();
 // and other operations...
+
+newln();
+
+print $str->hash('gost');
